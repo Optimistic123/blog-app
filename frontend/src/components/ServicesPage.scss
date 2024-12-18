@@ -1,0 +1,16 @@
+.services-page {
+    margin-top: 90px;
+
+    .services-page-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 0px 20px;
+
+        h2, p {
+            color: white;
+        }
+    }
+}

@@ -7,7 +7,9 @@ import { clerkMiddleware } from "@clerk/express";
 const app = express();
 
 app.use(cors(process.env.CLIENT_URL));
-// app.use(clerkMiddleware());
+app.use(clerkMiddleware({
+    apiKey: process.env.CLERK_SECRET_KEY // The API Key (Secret Key) for server-side authentication
+}));
 app.use("/webhooks", webhookRouter);
 
 app.use(express.json());
