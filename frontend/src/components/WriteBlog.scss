@@ -1,0 +1,61 @@
+.text-editor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+
+    .text-editor {
+        width: 70%;
+        /* Default for larger screens */
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .tool-bar {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+
+        .divider {
+            border: none;
+            border-left: 2px solid rgba(#141212, 0.2);
+            margin: 2px 10px;
+        }
+
+        button,
+        label {
+            padding: 5px 10px;
+            background-color: #6200ee;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover,
+        label:hover {
+            background-color: #3700b3;
+        }
+    }
+
+    .tiptap {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        min-height: 70vh;
+        min-width: 100%;
+        background-color: #fff;
+        outline: none;
+    }
+
+    @media (max-width: 768px) {
+        .tiptap {
+            width: 90%;
+        }
+    }
+}

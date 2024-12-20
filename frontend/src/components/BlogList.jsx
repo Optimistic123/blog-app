@@ -18,6 +18,7 @@ const BlogList = () => {
         }
     }, [dispatch]);
 
+
     return (
         <div className="blog-list">
             {isBlogLoading ? (
@@ -47,7 +48,7 @@ const BlogList = () => {
                                         Read More
                                     </Link>
                                 </div>
-                                
+
                             </div>
                         ))}
                     </div>

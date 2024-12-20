@@ -8,6 +8,7 @@ import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 import BlogDetail from './components/BlogDetails';
 import BlogList from './components/BlogList';
+import WriteBlog from "./components/WriteBlog"
 // import Profile from './pages/Profile';
 // import Login from './pages/Login';
 // import ProtectedRoute from './components/ProtectedRoute';
@@ -36,6 +37,7 @@ const App = () => {
               <Route path=":id" element={<BlogDetail />} /> {/* Blog details */}
             </Route>
             <Route path="/contact" element={<Contact />} />
+            <Route path="/write" element={<WriteBlog />} />
 
 
             {/* <Route path="/login" element={<Login />} /> */}

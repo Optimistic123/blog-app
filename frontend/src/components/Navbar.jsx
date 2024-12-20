@@ -58,6 +58,7 @@ const Navbar = () => {
               {/* <li><Link to="/whyus" onClick={collpaseMenu}>Why Us</Link></li> */}
               <li><Link to="/blog" onClick={collpaseMenu}>Blogs</Link></li>
               <li><Link to="/contact" onClick={collpaseMenu}>Contact Us</Link></li>
+              <li><Link to="/write" onClick={collpaseMenu}>Write</Link></li>
               {/* <CTAButton CTA={"Sign up for webinar"} onClick={handelModal}/> */}
               <SignedOut>
                 <SignInButton />
